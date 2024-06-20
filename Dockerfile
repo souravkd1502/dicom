@@ -15,9 +15,8 @@ EXPOSE 8000
 
 # Define environment variables
 ENV S3_BUCKET=dicom-images-dump \
-    REGION_NAME=us-east-1 \
-    ACCESS_KEY_ID=AKIAQ3EGTVCCXKWLUZF2 \
-    SECRET_ACCESS_KEY=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
+    REGION_NAME=us-east-1 
+
 
 # Run app.py when the container launches
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
